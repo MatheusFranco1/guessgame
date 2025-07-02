@@ -16,7 +16,7 @@ const Maker: React.FC = () => {
 
         try {
             const backendUrl = process.env.REACT_APP_BACKEND_URL; // Use the environment variable
-            const response = await fetch(`${backendUrl}/create`, {
+            const response = await fetch('/api/create', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

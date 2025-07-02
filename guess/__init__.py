@@ -35,7 +35,7 @@ def create_app(config=None):
                 raise e
 
     from .game_routes import game_bp  # Assuming your blueprint is named `game_bp`
-    app.register_blueprint(game_bp)
+    app.register_blueprint(game_bp, url_prefix='/api')
 
     @app.route('/health', methods=['GET'])
     def health():

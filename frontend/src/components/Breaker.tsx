@@ -9,8 +9,7 @@ const Breaker: React.FC = () => {
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         try {
-            const backendUrl = process.env.REACT_APP_BACKEND_URL; // Use the environment variable
-            const response = await fetch(`${backendUrl}/guess/${gameId}`, {
+            const response = await fetch(`/api/guess/${gameId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
