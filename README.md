@@ -47,7 +47,7 @@ Este projeto é um jogo de adivinhação de palavras, composto por backend Flask
 
 1. **Clone o repositório:**
    ```sh
-   git clone https://github.com/fams/guess_game.git
+   git clone https://github.com/MatheusFranco1/guessgame
    cd guess_game
    ```
 
